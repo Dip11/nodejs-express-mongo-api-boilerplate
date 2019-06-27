@@ -1,7 +1,7 @@
 {
-  "name": "mern-auth",
+  "name": "node-ex-mongo-boilerplate",
   "version": "1.0.0",
-  "description": "Mern Auth Example",
+  "description": "Node Js Express Mongo BoilerPlate Template",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
