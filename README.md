@@ -56,14 +56,21 @@ This project will allow users to
 
 
 ### Project Structure
-- src
-    - config
-    - controllers
-    - models
-    - routes
-    - validation
-- package-json
-- server.js
+```
+project  
+│
+└───src
+│   │   
+│   └───config
+│   └───controllers   
+│   └───models       
+│   └───routes   
+│   └───validation   
+│   
+└───package.json
+└───server.js
+  
+```
 
 
 * In the `src/config` directory you will find two files named `keys.js` & `passport.js`. In `keys.js` you have to provide your **mongodbURI**(as shown in the configuration part). `passport.js` is the configuration for jwt-passport authentication.  You can read more about the `passport-jwt` strategy in their official website. It does a great job breaking down how the JWT authentication strategy is constructed, explaining required parameters, variables and functions such as `options, secretOrKey, jwtFromRequest, verify`, and `jwt_payload`.
