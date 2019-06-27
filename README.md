@@ -56,22 +56,21 @@ This project will allow users to
 
 
 ### Project Structure
-1. src
+- src
     - config
     - controllers
     - models
     - routes
     - validation
-2. package-json
-3. server.js
+- package-json
+- server.js
 
 
+* In the `src/config` directory you will find two files named `keys.js` & `passport.js`. In `keys.js` you have to provide your **mongodbURI**(as shown in the configuration part). `passport.js` is the configuration for jwt-passport authentication.  You can read more about the `passport-jwt` strategy in their official website. It does a great job breaking down how the JWT authentication strategy is constructed, explaining required parameters, variables and functions such as `options, secretOrKey, jwtFromRequest, verify`, and `jwt_payload`.
 
-* In the `src/config` directory you will find two files named `keys.js` & `passport.js`. In `keys.js` you have to provide your **mongodbURI**(as shown in the configuration file). `passport.js` is the configuration for jwt-passport authentication.  You can read more about the `passport-jwt` strategy in their official website. It does a great job breaking down how the JWT authentication strategy is constructed, explaining required parameters, variables and functions such as `options, secretOrKey, jwtFromRequest, verify`, and `jwt_payload`.
-
-* `src/controllers` is the directory where you will build your controllers based on different purpose. There is already a built-in controller `app-user.controller.js` with registering and login methods.
+* `src/controllers` is the directory where you will build your controllers based on different purpose. There is already a built-in controller `app-user.controller.js` with registration and login methods.
 * `src/models` folder arranges all your models will be used for this project. 
-*  `src/routes` folder keep track of all your routes. In the `index.js` file you have register all your purpose based routes, which further you can elaborate in your `src/routes/api` folder. There is also an `auth.js` file  for protected route. 
+*  `src/routes` folder keep track of all your routes. In the `index.js` file you have to register all your purpose based routes, which further you can elaborate in your `src/routes/api` folder. There is also an `auth.js` file  for defining protected  and public routes. 
 *  `src/validation` folder keeps the files for validating `email` and `password`  for login and registration purpose.
 *  `package.json`  contains the meta-data of the project(dependencies and scripts).
 *  `server.js	` file is the main entry point of the project. When you run the project this file gets executed.
