@@ -7,7 +7,7 @@ This project uses the following technologies:
 
 
 ### Configurations
-Make sure to add your own `YourMongoDBUrl` from your mLab database in `src/config/keys.js.`
+Make sure to add your own `YourMongoDBUrl` from your  database in `src/config/keys.js.`
 
 ```
 
